@@ -1,8 +1,11 @@
 package streamCollector;
 
 import org.apache.spark.streaming.api.java.JavaPairDStream;
+
+import config.Config;
 import scala.Tuple2;
 import twitter4j.Status;
+import config.Config;
 import org.apache.spark.streaming.api.java.JavaDStream;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -17,7 +20,8 @@ public class StreamAttDataCollector {
 	{
 		// filter tweets that talk about Barcelona attractions
 		List<String> records = new ArrayList<>();
-		try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/attractions_500.csv"))) {
+		Config conf =new Config(true);
+		try (BufferedReader br = new BufferedReader(new FileReader(conf.ATTRACTION_PATH))) {
 		    String line;
 		    while ((line = br.readLine()) != null) {
 		        String[] values = line.split(",");

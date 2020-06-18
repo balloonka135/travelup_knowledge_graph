@@ -1,5 +1,7 @@
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+
+import config.Config;
 import scala.Tuple2;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
@@ -11,7 +13,8 @@ public class Labeling {
 	public static String basicAnalysis(JavaSparkContext ctx) {
 		String out = "";
 		
-		JavaRDD<String> attDesc = ctx.textFile("src/main/resources/Attraction_Description.csv");
+		Config conf=new Config(true);
+		JavaRDD<String> attDesc = ctx.textFile(conf.ATTRACTION_PATH);
 		
 		JavaRDD<Object> attDescPairs = attDesc
                 .mapToPair(f -> 
