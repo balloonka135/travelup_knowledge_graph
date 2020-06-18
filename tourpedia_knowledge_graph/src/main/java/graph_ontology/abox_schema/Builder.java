@@ -141,9 +141,6 @@ public class Builder {
                 currentPlace.addLiteral(placePolarityProp, placePolarity);
             }
 
-            // check if tripadvisor ontology has this resource
-            // placeResource.sameAs(other_resource);
-
             model.add(model.createStatement(currentPlace, rdfType, placeResource));
         }
         csvReader.close();
