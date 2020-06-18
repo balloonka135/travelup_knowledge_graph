@@ -1,0 +1,44 @@
+* Review
+    * id
+    * language
+    * review_polarity
+    * rating
+    * review_source
+    * review_text
+    * review_time
+    * words_count
+    * review_details
+* Place
+    * id
+    * place_name
+    * phone_number
+    * international_phone_number
+    * description
+    * website
+    * icon
+    * sub_category (optional)
+    * statistics (save full dictionary as a string)
+    * place_polarity
+
+* Location
+    * id
+    * address
+    * city
+    * lat
+    * lng
+
+* Category
+    * id
+    * category_name
+
+* hasCategory
+    * place id
+    * category id
+
+* isAbout
+    * review id
+    * place id
+
+* locatedAt
+    * place id
+    * location id
