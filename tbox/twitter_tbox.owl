@@ -7,6 +7,87 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/twitter#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#has_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/twitter#has_location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter#Tweet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/twitter#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#location_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter#location_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#published_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter#published_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter#Tweet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#tweet_content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/twitter#tweet_content">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/twitter#Tweet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/twitter#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/twitter#Tweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/twitter#Tweet"/>
 </rdf:RDF>
 
 
