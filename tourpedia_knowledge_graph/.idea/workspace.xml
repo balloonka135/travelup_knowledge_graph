@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1679ff00-7b4d-4818-98ea-173623cd4827" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../tbox/twitter_tbox.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../tbox/twitter_tbox.owl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graph_ontology/abox_schema/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph_ontology/abox_schema/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/abox.ntD" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output/abox.ntD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tripadvisor_knowledge_graph/src/main/resources/output/abox.ntD" beforeDir="false" afterPath="$PROJECT_DIR$/../tripadvisor_knowledge_graph/src/main/resources/output/abox.ntD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/abox_schema/Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/config/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/HDFSReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/LocalReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/Reader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/output/abox.ntD" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/output/abox.ntD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/abox_schema/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/abox_schema/Builder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../utils/sparql_integration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/sparql_integration.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592480939720</updated>
       <workItem from="1592480944426" duration="33000" />
+      <workItem from="1592503199770" duration="1710000" />
     </task>
     <servers />
   </component>
@@ -63,9 +74,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1592480945536">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592503453254">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592480945536" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1592503453254" />
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1592503198744">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="399" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1592503198744" />
   </component>
 </project>

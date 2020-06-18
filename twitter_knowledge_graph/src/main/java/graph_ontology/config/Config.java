@@ -18,17 +18,11 @@ public class Config {
     public final String TWEET_LOCATION_PROPERTY_URL = BASE_URL + "has_location";
 
     // nodes data
-    public  String LOCATION_PATH = "src/main/resources/locations.csv";
-    public  String TWEET_PATH = "src/main/resources/tweets.csv";
-
-    // relationships data
-    public  String HAS_LOCATION_PATH = "src/main/resources/has_location.csv";
+    public  String DATA_PATH = "src/main/resources/locations.csv";
 
     public Config(Boolean isDev) {
         if (!isDev) {
-            this.TWEET_PATH = "twitter/tweets.csv";
-            this.LOCATION_PATH = "twitter/locations.csv";
-            this.HAS_LOCATION_PATH = "twitter/has_location.csv";
+            this.DATA_PATH = "twitter/tweets.csv";
         }
     }
 }

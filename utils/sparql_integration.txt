@@ -1,13 +1,19 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:​​http://www.w3.org/2000/01/rdf-schema#
-PREFIX owl:​​http://www.w3.org/2002/07/owl#
+PREFIX rdfs:​​ <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <​​http://www.w3.org/2002/07/owl#>
 PREFIX tp_schema: <http://www.semanticweb.org/tourpedia#>
 PREFIX ta_schema: <http://www.semanticweb.org/tripadvisor#>
+PREFIX tw_schema: <http://www.semanticweb.org/twitter#>
 
-    CONSTRUCT { ?place_name owl:sameAs ?location_name .
-          }
-    WHERE { 	?place rdf:type tp_schema:Place ;
-		       tp_schema:place_name ?place_name .
-		?location rdf:type ta_schema:Location ;
-			  ta_schema:LocationName ?location_name .
-      }
+CONSTRUCT {
+    ?tp_place owl:sameAs ?ta_place .
+    ?tp_place owl:sameAs ?tw_place .
+}
+WHERE {
+    ?tp_place rdf:type tp_schema:Place ;
+	      tp_schema:place_name ?place_name .
+    ?ta_place rdf:type ta_schema:Location ;
+	      ta_schema:LocationName ?place_name .
+    ?tw_place rdf:type tw_schema:Location ;
+              tw_schema:location_name ?place_name .
+}	

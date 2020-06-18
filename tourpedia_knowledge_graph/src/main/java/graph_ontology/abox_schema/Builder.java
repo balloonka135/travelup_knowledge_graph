@@ -10,6 +10,7 @@ import org.apache.jena.rdf.model.Resource;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.FileReader;
 
 public class Builder {
 
@@ -31,6 +32,7 @@ public class Builder {
         Property categoryNameProp = model.getProperty(conf.CATEGORY_NAME_PROPERTY_URL);
 
         BufferedReader csvReader =  reader.open(conf.CATEGORY_PATH);
+
         String row;
         while ((row = csvReader.readLine()) != null) {
             String[] row_data = row.split(",");
@@ -58,11 +60,11 @@ public class Builder {
         while ((row = csvReader.readLine()) != null) {
             String[] row_data = row.split(",");
 
-            String locationURI = row_data[0];
-            String locationAddr = row_data[1];
-            String locationCity = row_data[2];
-            String locationLat = row_data[3];
-            String locationLong = row_data[4];
+            String locationURI = row_data[1];
+            String locationAddr = row_data[2];
+            String locationCity = row_data[3];
+            String locationLat = row_data[4];
+            String locationLong = row_data[5];
 
             String locationAddress = locationAddr.replace(" ", "_");
 
@@ -98,16 +100,16 @@ public class Builder {
         while ((row = csvReader.readLine()) != null) {
             String[] row_data = row.split(",");
 
-            String placeURI = row_data[0];
-            String pName = row_data[1];
-            String placeDesc = row_data[2];
-            String placePhoneNumber = row_data[3];
-            String placeInPhoneNumber = row_data[4];
-            String placeWebsite = row_data[5];
-            String placeIcon = row_data[6];
-            String placeSubcategory = row_data[7];
-            String placeStatistics = row_data[8];
-            String placePolarity = row_data[9];
+            String placeURI = row_data[1];
+            String pName = row_data[2];
+            String placeDesc = row_data[3];
+            String placePhoneNumber = row_data[4];
+            String placeInPhoneNumber = row_data[5];
+            String placeWebsite = row_data[6];
+            String placeIcon = row_data[7];
+            String placeSubcategory = row_data[8];
+            String placeStatistics = row_data[9];
+            String placePolarity = row_data[10];
 
             String placeName = pName.replace(" ", "_");
             String placeDescription = placeDesc.replace(" ", "_");
