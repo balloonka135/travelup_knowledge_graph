@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1679ff00-7b4d-4818-98ea-173623cd4827" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../tbox/twitter_tbox.owl" beforeDir="false" afterPath="$PROJECT_DIR$/../tbox/twitter_tbox.owl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graph_ontology/abox_schema/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph_ontology/abox_schema/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/abox_schema/Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/config/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/HDFSReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/LocalReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/graph_ontology/reader/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/output/abox.ntD" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/output/abox.ntD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/abox_schema/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/abox_schema/Builder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../twitter_knowledge_graph/src/main/java/graph_ontology/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../utils/sparql_integration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../utils/sparql_integration.txt" afterDir="false" />
-    </list>
+    <list default="true" id="1679ff00-7b4d-4818-98ea-173623cd4827" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
