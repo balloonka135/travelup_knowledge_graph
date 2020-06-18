@@ -15,26 +15,19 @@ public class TripAdvisor_Builder {
 
         BufferedReader csvReader = new BufferedReader(new FileReader(TripAdvisor_Config.TAG_PATH));
         String row;
-        row = csvReader.readLine();
+        csvReader.readLine();
         while ((row = csvReader.readLine()) != null) {
             String[] row_data = row.split(",");
 
             String tagURI = row_data[1];
             String tagName = row_data[0];
 
-
             if(!tagName.equals("")){
-                String[] taglist = tagName.split("[|]");
-                for(String tag:taglist){
-                    Resource currentTag = model.createResource(TripAdvisor_Config.BASE_URL + tagURI)
-                            .addLiteral(tagNameProp, tag);
+                Resource currentTag = model.createResource(TripAdvisor_Config.BASE_URL + tagURI)
+                        .addLiteral(tagNameProp, tagName);
                     model.add(model.createStatement(currentTag, rdfType, tagResource));
                 }
             }
-
-
-
-        }
         csvReader.close();
     }
 

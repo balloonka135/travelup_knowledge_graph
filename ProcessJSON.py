@@ -3,52 +3,53 @@ import numpy as np
 import pandas as pd
 import os
 
-JSON_FILES_PATH = '/Users/rodaina/JSONprocessing/input'
-TAGS_FILE = '/tags_map.json'
-LOCATIONS_FILE = '/attractions_500.json'
-REVIEWS_FOLDER_PATH = '/Users/rodaina/JSONprocessing/input/reviews/'
-OUTPUT_PATH ='/Users/rodaina/JSONprocessing/output'
+JSON_FILES_PATH = 'input/'
+TAGS_FILE = 'tags_map.json'
+LOCATIONS_FILE = 'attractions_500.json'
+REVIEWS_FOLDER_PATH = 'input/reviews/'
+OUTPUT_PATH = 'output'
 
 
 def create_tags_csv(path, file):
     """ Create tags and has_tag relationship csv file with needed data for the ontology from the json file"""
+    tag_map = {}
+    location_tags_map = {}
+
     with open(path + file) as f:
         tags_file = json.load(f)
 
-    tags = []
-    t = []
-    for i, item in enumerate(tags_file):
-        for v in item:
-            tt = []
-            tags.append(v)
-            # print(v)
-            for z in tags_file[i][str(v)][0]:
-                try:
-                    tag =z.get('tagName', None)
-                except KeyError:
-                    pass
+        for i, item in enumerate(tags_file):
+            for v in item:
+                location_tags = []
+                location_id = v.split("_")[1]
+                for z in tags_file[i][str(v)][0]:
+                    try:
+                        tag = z.get('tagName', None)
+                    except KeyError:
+                        pass
 
-                tt.append(tag)
-            t.append(tt)
+                    if tag not in tag_map:
+                        tag_map[tag] = len(tag_map)
+                    location_tags.append(tag)
+                location_tags_map[location_id] = location_tags
 
-    tags_df = pd.DataFrame()
-    tags_df['ID'] = tags
-    tags_df['tags'] = t
-    tags_df['ID'] = tags_df['ID'].map(lambda x: x.lstrip('tags_').rstrip('aAbBcC'))
-    tags_df['tags'] = ['|'.join(map(str, l)) for l in tags_df['tags']]
+    df_tag_map = {"tag_id": [], "name": []}
+    df_has_tag_map = {"location_id": [], "tag_id": []}
 
-    # create a list of unique names
     np.random.seed(1)
-    names = tags_df[['ID', 'tags']].agg(' '.join, 1).unique().tolist()
-    ids = np.random.randint(low=1e9, high=1e10, size=len(names))
-    maps = {k: v for k, v in zip(names, ids)}
-    tags_df['tagsID'] = tags_df[['ID', 'tags']].agg(' '.join, 1).map(maps)
+    ids = np.random.randint(low=1e9, high=1e10, size=len(tag_map))
+    for i, (tag, old_id) in enumerate(tag_map.items()):
+        new_id = ids[i]
+        tag_map[tag] = new_id
+        df_tag_map["name"].append(tag)
+        df_tag_map["tag_id"].append(new_id)
 
-    has_tag = pd.DataFrame()
-    has_tag = pd.DataFrame(tags_df[['ID', 'tagsID']].copy())
-    tags_df = pd.DataFrame(tags_df[['tags', 'tagsID']].copy())
+    for location, tags in location_tags_map.items():
+        for tag in tags:
+            df_has_tag_map["location_id"].append(location)
+            df_has_tag_map["tag_id"].append(tag_map[tag])
 
-    return tags_df, has_tag
+    return pd.DataFrame(df_tag_map), pd.DataFrame(df_has_tag_map)
 
 
 def create_locations_csv(path, file):
@@ -125,7 +126,6 @@ def create_reviews_csv(path):
 
 
 def main():
-
     tags, has_tags = create_tags_csv(JSON_FILES_PATH, TAGS_FILE)
     tags.to_csv(OUTPUT_PATH+'/tags.csv', encoding='utf-8', index=False)
     has_tags.to_csv(OUTPUT_PATH+'/has_tags.csv', encoding='utf-8', index=False)
