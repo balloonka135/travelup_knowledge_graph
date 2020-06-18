@@ -126,9 +126,9 @@ def create_reviews_csv(path):
 
 def main():
 
-    # tags, has_tags = create_tags_csv(JSON_FILES_PATH, TAGS_FILE)
-    # tags.to_csv(OUTPUT_PATH+'/tags.csv', encoding='utf-8', index=False)
-    # has_tags.to_csv(OUTPUT_PATH+'/has_tags.csv', encoding='utf-8', index=False)
+    tags, has_tags = create_tags_csv(JSON_FILES_PATH, TAGS_FILE)
+    tags.to_csv(OUTPUT_PATH+'/tags.csv', encoding='utf-8', index=False)
+    has_tags.to_csv(OUTPUT_PATH+'/has_tags.csv', encoding='utf-8', index=False)
 
     attractions = create_locations_csv(JSON_FILES_PATH, LOCATIONS_FILE)
     attractions.to_csv(OUTPUT_PATH+'/attractions.csv', encoding='utf-8', index=False)
