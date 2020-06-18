@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Camp Nou",
+    "rating": 4.5,
+    "tags": "Sports",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/fb/c9/cf/screenshot-20200223-144846.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Anella Olimpica",
+    "rating": 4,
+    "tags": "Sports, Olympics",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/f2/4c/f5/anella-olimpica.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Estadi Olímpic",
+    "rating": 4,
+    "tags": "Sports, Olympics",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/34/04/8c/olympic-stadium-barcelona.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Telefèric de Montjuïc",
+    "rating": 4,
+    "tags": "Sports, Entertainment",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/15/c0/65/montjuic-cable-car.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Port Olimpic",
+    "rating": 4,
+    "tags": "Sports, Olympic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/18/62/port-olimpic.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Bogatell Beach",
+    "rating": 4.5,
+    "tags": "Sports, Beach, Sun",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/f6/ce/4a/photo0jpg.jpg?w=100&h=100&s=1"
+  }
+]

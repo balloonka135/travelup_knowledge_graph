@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Basilica of the Sagrada Familia",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/56/2a/e7/hay-construcciones-monumentale.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Gothic Quarter (Barri Gotic)",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/4a/a9/05/photo0jpg.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Casa Batllo",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/daodao/photo-o/19/ac/b2/a5/caption.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Palace of Catalan Music",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8a/ea/9d/il-bellissimo-balcone.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Casa Milà - La Pedrera",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/9d/7f/3b/the-roof.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Mercat de la Boqueria",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-t/1a/39/23/59/mercat-de-la-boqueria.jpg"
+  },
+  {
+    "name": "Basílica de Santa Maria del Mar",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/de/92/14/interior-de-la-basilica.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Recinte Modernista de Sant Pau",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/8d/f0/bd/recinto-modernista-de.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Museu Nacional d'Art de Catalunya",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/5c/02/8a/outside-of-museum.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Barcelona Cathedral",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/64/ea/c0/cloisters-and-patio-of.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "The Magic Fountain",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/de/45/73/magic-fountain.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Parc de Montjuic",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/d6/e3/29/parc-de-montjuic.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "CosmoCaixa",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/2f/9b/b2/science-museum-museu.jpg?w=100&h=100&s=1"
+  },
+  {
+    "name": "Casa Vicens",
+    "rating": 4.5,
+    "tags": "Cultural, Touristic",
+    "imageUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8c/c9/87/photo0jpg.jpg?w=100&h=100&s=1"
+  }
+]
