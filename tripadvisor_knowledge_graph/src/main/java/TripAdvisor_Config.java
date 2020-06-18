@@ -1,6 +1,6 @@
 public class TripAdvisor_Config {
 
-    public static final String BASE_URL = "http://www.semanticweb.org/tourpedia#";
+    public static final String BASE_URL = "http://www.semanticweb.org/tripadvisor#";
     public static final String OUTPUT_PATH = "src/main/resources/output/";
     public static final String RDFTYPE_URL = "http://www.w3.org/1999/02/22-rdf-syntax-ns#type";
 
